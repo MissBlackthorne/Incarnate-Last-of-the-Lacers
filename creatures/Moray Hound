@@ -1,0 +1,101 @@
+{
+	"name": "Moray Hound",
+	"source": "Incarnate-TheLastoftheLacers",
+	"page": 157,
+	"size": [
+		"H"
+	],
+	"type": "beast",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 14,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "5d12 + 10",
+		"average": 42
+	},
+	"speed": {
+		"walk": 70,
+		"swim": 60
+	},
+	"str": 18,
+	"dex": 16,
+	"con": 14,
+	"int": 4,
+	"wis": 11,
+	"cha": 8,
+	"passive": 13,
+	"cr": "2",
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"shortName": true,
+	"skill": {
+		"perception": "+3"
+	},
+	"trait": [
+		{
+			"name": "Keen Smell",
+			"entries": [
+				"The hound has advantage on Wisdom (Perception) checks that rely on smell."
+			]
+		},
+		{
+			"name": "Endurance",
+			"entries": [
+				"The hound has advantage on saving throws against becoming exhausted."
+			]
+		}
+	],
+	"traitTags": [
+		"Keen Senses"
+	],
+	"action": [
+		{
+			"name": "Multiattack.",
+			"entries": [
+				"The hound makes two attacks: one with itsbite and one with its tail."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"tokenHref": {
+		"type": "external",
+		"url": "https://img.wattpad.com/e8f4628f764673eeea89ca312b3a5fb5e1c30beb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f305a5f6b5a7a30706465784d32513d3d2d313037343838353331322e313638333666393564353535333738653237313838313932313334382e6a7067?s=fit&w=720&h=720"
+	},
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://img.wattpad.com/e8f4628f764673eeea89ca312b3a5fb5e1c30beb/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f305a5f6b5a7a30706465784d32513d3d2d313037343838353331322e313638333666393564353535333738653237313838313932313334382e6a7067?s=fit&w=720&h=720"
+				}
+			}
+		]
+	},
+	"damageTags": [
+		"P"
+	]
+}
