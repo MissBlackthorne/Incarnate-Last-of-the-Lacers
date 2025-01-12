@@ -1,0 +1,121 @@
+{
+	"name": "Burrowing Fringehead",
+	"size": [
+		"G"
+	],
+	"type": "beast",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 17,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "16d20 + 80",
+		"average": 248
+	},
+	"speed": {
+		"walk": 0,
+		"burrow": 60
+	},
+	"str": 22,
+	"dex": 13,
+	"con": 20,
+	"int": 1,
+	"wis": 10,
+	"cha": 5,
+	"passive": 16,
+	"cr": "11",
+	"shortName": "Burrowing Fringehead",
+	"page": 111,
+	"senses": [
+		"tremorsense 120 ft."
+	],
+	"senseTags": [
+		"T"
+	],
+	"skill": {
+		"perception": "+6"
+	},
+	"trait": [
+		{
+			"name": "Surprise Attack (Bugbear)",
+			"entries": [
+				"If the burrowing fringehead surprises a creature and hits it with an attack during the first round of combat, the target takes an extra  17 ({@damage 3d10}) damage from the attack."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The fringehead makes two attacks: one with its bite and one to constrict. If the fringehead has a creature swallowed, it instead makes two slam attacks."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}31 ({@damage 3d12 + 12}) piercing damage."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}28 ({@damage 3d10 + 12}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Constrict",
+			"entries": [
+				"{@atk mw} {@hit +10} to hit, reach 5 ft., one Large or smaller creature. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage plus 17 ({@damage 2d10 + 6}) slashing damage. The target is {@condition grappled} (escape {@dc 17}) if the burrowing fringehead isn't already constricting a creature, and the target is {@condition restrained} until this grapple ends."
+			]
+		},
+		{
+			"name": "Swallow",
+			"entries": [
+				"The burrowing fringehead makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has {@quickref Cover||3||total cover} against attacks and other effects outside the burrowing fringehead, and it takes 32 ({@damage 9d6}) acid damage at the start of each of the burrowing fringehead's turns. The burrowing fringehead can have only one creature swallowed at a time.",
+				"If the burrowing fringehead takes 40 damage or more on a single turn from the swallowed creature, the burrowing fringehead must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the burrowing fringehead. If the burrowing fringehead dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 15 feet of movement, exiting {@condition prone}."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack",
+		"Swallow"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"blinded",
+		"grappled",
+		"restrained"
+	],
+	"fluff": {
+		"entries": [
+			"The burrowing fringehead is a titanic predator that roams underneath the surface of Quoya Desert. The fringehead preys on almost anything that moves, moving the desert from simply a hostile and difficult environment to an unlivable nightmare for all but the most prepared and resourceful.",
+			"{@b Intimidating Fringe.} The fringehead has an enormous stretch of skin between its jaws, which it flares to intimidate prey before it feasts on them, as well as to intimidate rivals. The fringe appears in bright primary colors such as red, yellow, and blue, and is used to fight with and attempt to frighten other fringeheads that impose on its territory.",
+			"{@b Stalker of the Desert.} Fringeheads swim through loose sand as easily as a fish swims in water. It is unknown whether the fringehead has access to any type of earthlacing to help in this regard, or whether their powerful fins and tails are simply strong enough to propel them through the sand. Like a shark, a fringehead can sometimes be seen approaching when it nears the surface of the sand, as its fins break the surface and reveal its position.",
+			"{@b Deadly Encounters.} Stories of burrowing fringeheads are common tales to encourage children from wandering away, but actual encounters have dwindled. No one knows what might lead to the population loss of such a fearsome and powerful predator, but no one assumes that the Quoya Desert is safe because of it."
+		]
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328063294707208303/burrowing_fringehead.png?ex=678556d3&is=67840553&hm=83814da1aaf57868f314eac7cc725727b4851733a54d8847bdbb8d866cc2a25b&"
+	},
+	"damageTags": [
+		"A",
+		"B",
+		"P",
+		"S"
+	],
+	"savingThrowForced": [
+		"constitution"
+	]
+}
