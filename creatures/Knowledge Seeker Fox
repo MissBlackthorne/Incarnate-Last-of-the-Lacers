@@ -1,0 +1,96 @@
+{
+	"name": "Knowledge Seeker Fox",
+	"size": [
+		"S"
+	],
+	"type": "beast",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"formula": "1d6",
+		"average": 3
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 8,
+	"dex": 16,
+	"con": 11,
+	"int": 4,
+	"wis": 12,
+	"cha": 7,
+	"passive": 13,
+	"cr": "0",
+	"page": 113,
+	"senses": [
+		"truesight 10 ft."
+	],
+	"senseTags": [
+		"U"
+	],
+	"languages": [
+		"understands Sylvan but can't speak."
+	],
+	"languageTags": [
+		"CS",
+		"S"
+	],
+	"skill": {
+		"perception": "+3"
+	},
+	"trait": [
+		{
+			"name": "Keen Hearing and Smell",
+			"entries": [
+				"The knowledge seeker fox has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+			]
+		},
+		{
+			"name": "Spider Climb",
+			"entries": [
+				"The knowledge seeker fox can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			]
+		}
+	],
+	"traitTags": [
+		"Keen Senses",
+		"Spider Climb"
+	],
+	"action": [
+		{
+			"name": "bite",
+			"entries": [
+				"{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}0 ({@damage 1d4 - 2}) piercing damage."
+			]
+		},
+		{
+			"name": "Charm",
+			"entries": [
+				"The knowledge seeker targets one humanoid or beast that it can see within 30 feet of it. If the target can see the seeker, it must succeed on a {@dc 11} Wisdom saving throw or be magically {@condition charmed}. The {@condition charmed} creature regards the seeker as a trusted friend to be heeded and protected. Although the target isn't under the seeker's control, it acts favourably toward the seeker, and can understand its wants implicitly and attempts to help it achieve its goals (usually stealing books or scrolls).",
+				"Each time the seeker or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the seeker dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the seeker's Charm for the next 24 hours.",
+				"The seeker can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"charmed"
+	],
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328070052662214778/knowledge_seeker_fox.png?ex=67855d1e&is=67840b9e&hm=f25491a61b9a9add935f1d33a7a5f3000cd6a8e2f25c3ab2c4486b81bc26e913&"
+	},
+	"damageTags": [
+		"P"
+	],
+	"savingThrowForced": [
+		"wisdom"
+	]
+}
