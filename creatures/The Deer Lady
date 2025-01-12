@@ -1,0 +1,140 @@
+{
+	"name": "The Deer Lady",
+	"size": [
+		"M"
+	],
+	"type": "humanoid",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 12,
+			"from": [
+				"{@item leather armor|phb}"
+			]
+		}
+	],
+	"hp": {
+		"formula": "16d8",
+		"average": 72
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 14,
+	"con": 10,
+	"int": 9,
+	"wis": 14,
+	"cha": 16,
+	"passive": 12,
+	"cr": "1",
+	"page": 114,
+	"languages": [
+		"Sylvan"
+	],
+	"languageTags": [
+		"S"
+	],
+	"skill": {
+		"insight": "+4",
+		"persuasion": "+5"
+	},
+	"trait": [
+		{
+			"name": "Fey Ancestry",
+			"entries": [
+				"The the deer lady has advantage on saving throws against being {@condition charmed}, and magic can't put the the deer lady to sleep."
+			]
+		}
+	],
+	"traitTags": [
+		"Fey Ancestry"
+	],
+	"spellcasting": [
+		{
+			"name": "Innate Spellcasting",
+			"headerEntries": [
+				"The deer lady's innate spellcasting ability is Wisdom (spell save {@dc 13}). The lady can innately cast the following spells, requiring no material components:"
+			],
+			"will": [
+				"{@spell alter self|XPHB}",
+				"{@spell minor illusion|XPHB}"
+			],
+			"daily": {
+				"1": [
+					"{@spell hold person|XPHB}"
+				],
+				"3": [
+					"{@spell Tasha's hideous laughter|XPHB}"
+				]
+			},
+			"ability": "wis",
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"I"
+	],
+	"actionHeader": [
+		"{@b Multiattack.} The deer lady makes two attacks: one with its gore and one with its quarterstaff."
+	],
+	"action": [
+		{
+			"name": "Gore",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Gore",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, or 8 ({@damage 1d8 + 4}) bludgeoning damage if used with both hands."
+			]
+		},
+		{
+			"name": "Fey Charm",
+			"entries": [
+				"The the deer lady targets one humanoid or beast that she can see within 30 feet of her. If the target can see the the deer lady, it must succeed on a {@dc 14} Wisdom saving throw or be magically {@condition charmed}. The {@condition charmed} creature regards the the deer lady as a trusted friend to be heeded and protected. Although the target isn't under the the deer lady's control, it takes the the deer lady's requests or actions in the most favorable way it can.",
+				"Each time the the deer lady or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the the deer lady dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the the deer lady's Fey Charm for the next 24 hours.",
+				"The the deer lady can have no more than one humanoid and up to three beasts {@condition charmed} at a time."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"charmed"
+	],
+	"fluff": {
+		"entries": [
+			"Travelers who have passed through the deepest forests of Petan tell tales of the deer lady, a malevolent spirit that seeks to destroy those it encounters. It entices weary people deeper into the woods with the sound of a friendly voice and the big, brown, innocent eyes of a deer.",
+			"{@b Dancer.} The deer lady is said to haunt forests and surrounding communities, and some stories say that they can't resist a dance. Many tales are told of the deer lady having to join communal dances when it sees one, going completely unnoticed, and leaving only when the music ceases.",
+			"{@b Vain.} While the deer lady can use her magical wiles to trick others, she is also said to be self-conscious of her cloven hooves  She hides these hooves by remaining on the other side of trees and bushes, and sometimes flees when discovered to  be inhuman.",
+			"Other things that can drive away a deer lady are said to be tobacco, and certain chants which are said to hold power over her spiritual nature.",
+			"{@b Magical Lure.} Tales of the deer lady say that she forces people (usually men) to fall in love with her, luring them deep into the forest until it is too late for them to escape. These men are trapped by the deer lady's magic, forced to love her and stay with her until they eventually waste away."
+		]
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328075825567760384/deer_lady.png?ex=6785627f&is=678410ff&hm=c92c3cf1f44fb4444cfeeef09df0eb191a173da8da2a0748bcd57cff613e9eea&"
+	},
+	"damageTags": [
+		"B"
+	],
+	"damageTagsSpell": [
+		"B",
+		"P",
+		"S"
+	],
+	"savingThrowForced": [
+		"wisdom"
+	],
+	"savingThrowForcedSpell": [
+		"wisdom"
+	]
+}
