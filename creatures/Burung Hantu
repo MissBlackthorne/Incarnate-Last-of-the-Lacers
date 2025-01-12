@@ -1,0 +1,188 @@
+{
+	"name": "Burung Hantu",
+	"size": [
+		"H"
+	],
+	"type": "fey",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "10d12 + 20",
+		"average": 85
+	},
+	"speed": {
+		"walk": 50,
+		"fly": 60
+	},
+	"str": 16,
+	"dex": 17,
+	"con": 14,
+	"int": 16,
+	"wis": 13,
+	"cha": 11,
+	"passive": 19,
+	"cr": "7",
+	"page": 112,
+	"shortName": "Burung Hantu",
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"senseTags": [
+		"SD"
+	],
+	"languages": [
+		"Common",
+		"Sylvan"
+	],
+	"languageTags": [
+		"C",
+		"S"
+	],
+	"save": {
+		"wis": "+9",
+		"cha": "+8"
+	},
+	"skill": {
+		"insight": "+9",
+		"perception": "+9"
+	},
+	"traitTags": [
+		"Fey Ancestry"
+	],
+	"trait": [
+		{
+			"name": "Fey",
+			"entries": [
+				"The burung hantu cannot be {@condition charmed} or put to sleep."
+			]
+		},
+		{
+			"name": "Knowledgeable",
+			"entries": [
+				"The burung hantu values knowledge above anything else, and can be easily swain by shows of intelligence. Creatures can use Intelligence instead of Charisma to make Deception, Intimidation, Performance, and Persuasion skill checks to influence the burung hantu."
+			]
+		},
+		{
+			"name": "Inscrutable",
+			"entries": [
+				"The burung hantu is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the burung hantu's intentions or sincerity have disadvantage."
+			]
+		},
+		{
+			"name": "Legendary resistance {3/day}",
+			"entries": [
+				"If the burung hantu fails a saving throw, it can choose to succeed instead."
+			]
+		}
+	],
+	"legendaryActions": 3,
+	"legendaryHeader": [
+		"The burung hantu can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The burung hantu regains spent legendary actions at the start of its turn."
+	],
+	"legendary": [
+		{
+			"name": "Detect",
+			"entries": [
+				"The burung hantu makes a Wisdom (Perception) check."
+			]
+		},
+		{
+			"name": "Bite Attack",
+			"entries": [
+				"The burung hantu makes a bite attack."
+			]
+		},
+		{
+			"name": "Thrash (Costs 2 Actions).",
+			"entries": [
+				"The burung hantu begins thrashing wildly. Each creature within 10 feet of the burung hantu must succeed on a {@dc 14} Dexterity saving throw or take 20 ({@damage 3d10 + 3}) bludgeoning damage and be {@condition incapacitated} for 1 round. The burung hantu can then move up to half its speed."
+			]
+		}
+	],
+	"conditionInflict": [
+		"frightened",
+		"incapacitated"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"actionHeader": [
+		"{@b Multiattack} The burung hantu can use its Frightful Presence. It then makes two attacks: one bite attack and one slam attack."
+	],
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}10 ({@damage 1d8 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+			]
+		},
+		{
+			"name": "Frightening Presence",
+			"entries": [
+				"Each creature of the burung hantu's choice that is within 120 feet of the burung hantu and aware of it must succeed on a {@dc 14} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successs. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the burung hantu's Frightful Presence for the next 24 hours."
+			]
+		}
+	],
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328066594043334656/wan_shi_tong.png?ex=678559e6&is=67840866&hm=6873b9e7cb1272e5f7b6a796f500b2f95203edd7a8e3a34c7746690a91b22f3b&"
+	},
+	"fluff": {
+		"entries": [
+			"The burung hantu is an enigmatic creature. Burung hantu are ancient, and no one knows whether they are simply immortal, of if there are multiple burung hantu of the world.",
+			"The hantu appears as an enormous barn owl that can speak. Above all, stories of the hantu describe it as seeking knowledge.",
+			"There are many stories of the hantu hoarding knowledge, having its servants collect scrolls, books, and other sources of information to keep them for itself.",
+			"{@b Knowledge Seeker.} The burung hantu is always surrounded by animals that it uses to steal sources of knowledge. These almost always take the form of foxes. These foxes understand their orders and are found in the far corners of the world, finding sources of knowledge and history and bringing them back to their master. Many stories have sprung up around these animals with a strange glint in their eye seeking out sources of knowledge to steal.",
+			"{@b Altered Form.} While the burung hantu is often described as a terrifying if neutral creature, it is rumored that when angry, the hantu grows in size and its body elongates into a serpentine form. It is said to chase down and devour those who would disrespect the hantu or the knowledge it has collected.",
+			"{@b Sharing Knowledge}. While the hantu is a reclusive creature (many rumor that it doesn't exist at all, and is only a mythic creature), the hantu is typically depicted as wanting to share its knowledge with those who seek it. So long as the traveler or scholar seeks knowledge for learning's sake, and not to harm others or the environment, the hantu is usually happy to allow others to peruse its vast stores. The worst thing one can do to a burung hantu is to steal from it, which will cause it to become angered and seek to destroy those who have pilfered its knowledge.",
+			"---",
+			"{@b A Burung Hantu's Lair}",
+			"Depending on its age, a burung hantu may have begun to collect a vast hoard of scrolls, books, and other sources of information. It is unknown how the hantu constructs its lair, but the home of a burung hantu typically resembles a library, school, or other source of knowledge.",
+			"-----",
+			"{@b Knowledge Seeker Template}",
+			"The knowledge seeker is an animal, typically a fox, that the hantu has coerced into its service. When a creature becomes a knowledge seeker, it retains all its statistics except as noted below.",
+			"{@b Senses.} The knowledge seeker gains truesight with a radius of 10 feet.",
+			"{@b Spider Climb. } The seeker gains the ability to climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+			"{@b Languages.} The knowledge seeker understands Sylvan but cannot speak.",
+			"{@b New Action: Charm.} The knowledge seeker has the ability to charm another creature, which it will use to steal knowledge for its burung hantu master."
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://static.wikia.nocookie.net/avatar/images/e/e4/Wan_Shi_Tong_and_Jinora.png/revision/latest?cb=20131110110331"
+				}
+			}
+		]
+	},
+	"alias": [
+		"Wan Shi Tong"
+	],
+	"damageTags": [
+		"B",
+		"S"
+	],
+	"savingThrowForced": [
+		"dexterity",
+		"wisdom"
+	]
+}
