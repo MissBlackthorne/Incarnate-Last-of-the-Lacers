@@ -1,0 +1,112 @@
+{
+	"name": "Boarcupine",
+	"size": [
+		"L"
+	],
+	"type": "beast",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 13,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "8d12 + 32",
+		"average": 84
+	},
+	"speed": {
+		"walk": 50
+	},
+	"str": 16,
+	"dex": 8,
+	"con": 18,
+	"int": 2,
+	"wis": 9,
+	"cha": 6,
+	"passive": 9,
+	"cr": "5",
+	"shortName": "Boarcupine",
+	"page": 110,
+	"resist": [
+		{
+			"resist": [],
+			"note": "bludgeoning and slashing from nonmagical weapons"
+		}
+	],
+	"traitTags": [
+		"Charge",
+		"Keen Senses",
+		"Reckless"
+	],
+	"trait": [
+		{
+			"name": "Charge",
+			"entries": [
+				"If the boarcupine moves at least 20 feet straight toward a creature and then hits it with a quill slam attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the boarcupine can make a gore attack  against it as a bonus action."
+			]
+		},
+		{
+			"name": "Keen Smell",
+			"entries": [
+				"The boarcupine has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+			]
+		},
+		{
+			"name": "Reckless",
+			"entries": [
+				"At the start of its turn, the boarcupine can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+			]
+		},
+		{
+			"name": "Quilled Hide",
+			"entries": [
+				"A creature that hits the boarcupine with a melee attack while within 5 feet of it takes 9 ({@damage 2d6}) piercing damage."
+			]
+		}
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"action": [
+		{
+			"name": "Gore",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 3d4 + 6}) piercing damage."
+			]
+		},
+		{
+			"name": "Quill Slam",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"fluff": {
+		"entries": [
+			"The boarcupine is a powerful creature that lives primarily in the Winto Forest and Fengwood. Human intervention has cut down on its territory, as the earth kin cleared its native forest for more earth communities. This brings the boarcupine into conflict with people, as they fight to retain their homes.",
+			"{@b Fiercely Territorial.} The boarcupine live in small family units, with children being looked after by their parents. Adult boarcupines are incredibly dangerous, with powerful tusks and long quills that cover their backs. Especially when their children are present, boarcupines will defend their families at all costs.",
+			"{@b Acupuncture.} Despite these misgivings about people, isolated boarcupine populations have been successfully domesticated. Their immense size allows them to provide a number of resources for the people charged with their care. In addition, juvenile boarcupine quills (which fall out with regularity and can be easily collected from pens) are often used for acupuncture.",
+			"{@b Diet of Convenience.} The boarcupine is a highly versatile omnivore, whose diversity of choice in food is only rivalled by people. Boarcupines will eat almost anything, from roots and bulbs, to nuts and berries, leaves and twigs, worms and insects, up to lizards and snakes and other wild game."
+		]
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328055128627871850/boarcupine.png?ex=67854f38&is=6783fdb8&hm=67dce758e195140180da1193805f7a5e65532438e35e315dcb7a1bab75eef542&"
+	},
+	"damageTags": [
+		"B",
+		"P"
+	],
+	"savingThrowForced": [
+		"strength"
+	]
+}
