@@ -1,28 +1,103 @@
-___
->## Akhlut
->*Large Monstrosity, neutral evil*
->___
->- **Armor Class** 12 (natural armor)
->- **Hit Points** 90 (12d12 + 12)
->- **Speed** 40 ft., Swim 60 ft.
->___
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|19 (+4)|10 (+0)|13 (+1)|3 (-4)|12 (+1)|7 (-2)|
->___
->- **Skills** Perception +3
->- **Senses** Blindsight 120 ft., passive Perception 13
->- **Languages** —
->- **Challenge** 3 (XP 700; PB +2)
->- **Proficiency Bonus** +2
->___
->***Echolocation.*** The akhlut can't use its blindsight while deafened.  
->
->***Hold Breath (Killer Whale).*** The akhlut can hold its breath for 30 minutes.  
->
->***Keen Hearing.*** The akhlut has advantage on Wisdom (Perception) checks that rely on hearing.  
->
->***Shifting Form.*** The akhlut can change its shape to that of a killer whale as an action.  
->
->### Actions
->***Bite.*** *Melee Weapon Attack:*  +6 to hit, reach 5 ft., one target. *Hit:* 21 (5d6 + 4) piercing damage.
+{
+	"name": "Akhlut",
+	"size": [
+		"L"
+	],
+	"type": "monstrosity",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 12,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "12d12 + 12",
+		"average": 90
+	},
+	"speed": {
+		"walk": 40,
+		"swim": 60
+	},
+	"str": 19,
+	"dex": 10,
+	"con": 13,
+	"int": 3,
+	"wis": 12,
+	"cha": 7,
+	"passive": 13,
+	"cr": "3",
+	"page": 108,
+	"senses": [
+		"blindsight 120 ft."
+	],
+	"senseTags": [
+		"B"
+	],
+	"skill": {
+		"perception": "+3"
+	},
+	"trait": [
+		{
+			"name": "Echolocation",
+			"entries": [
+				"The akhlut can't use its blindsight while {@condition deafened}."
+			]
+		},
+		{
+			"name": "Hold Breath (Killer Whale)",
+			"entries": [
+				"The akhlut can hold its breath for 30 minutes."
+			]
+		},
+		{
+			"name": "Keen Hearing",
+			"entries": [
+				"The akhlut has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+			]
+		},
+		{
+			"name": "Shifting Form",
+			"entries": [
+				"The akhlut can change its shape to that of a killer whale as an action."
+			]
+		}
+	],
+	"traitTags": [
+		"Hold Breath",
+		"Keen Senses"
+	],
+	"fluff": {
+		"entries": [
+			"The akhlut is a beast that haunts the Great Glacier. It is spoken about in hushed whispers by the people of the water clan, one of the many trials they must endure that other nations of the world typically never learn about.",
+			"{@b Shapeshifter.} The akhlut's most distinguishing feature is its ability to change its shape. In water, the akhlut appears as a normal, although still dangerous, killer whale. The akhlut's true power, however, is to come onto land and take the shape of a gigantic wolf. On land, the akhlut keeps its distinguishing markings of black and white, identifying it immediately.",
+			"{@b Solitary Hunter.} Unlike both killer whales and wolves, akhlut are loners, existing as unstoppable forces of nature. The akhlut exists alone, with its tendency to eat everything in its path setting it apart from normal animals, whom the water clan respect as a part of nature. The akhlut is seen as apart from nature, an evil presence that should be avoided or destroyed at all costs.",
+			"{@b Muddy Footprints.} The territory of an akhlut can be identified by wolf pawprints that lead to the water. While akhlut look visually distinct with their black and white markings, dogs that wander too close to the water, or spend too much time there, are often distrusted by the people of the water clan, who are suspicous that the normal dog may inherit the akhlut's taint and become one of them."
+		]
+	},
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}21 ({@damage 5d6 + 4}) piercing damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"shortName": "Akhlut",
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328059023001518211/Akhlut.png?ex=678552d9&is=67840159&hm=cace39c552479151d7015d18b529fc98e4326e892b388b8d13d0fab623ee080c&"
+	},
+	"damageTags": [
+		"P"
+	]
+}
