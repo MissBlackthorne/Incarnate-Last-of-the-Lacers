@@ -1,0 +1,110 @@
+{
+	"name": "Barking Beast",
+	"size": [
+		"L"
+	],
+	"type": "monstrosity",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 12,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "11d10 + 11",
+		"average": 72
+	},
+	"speed": {
+		"walk": 50
+	},
+	"str": 17,
+	"dex": 15,
+	"con": 13,
+	"int": 3,
+	"wis": 12,
+	"cha": 8,
+	"passive": 13,
+	"cr": "2",
+	"shortName": "Barking Beast",
+	"page": 109,
+	"skill": {
+		"perception": "+3",
+		"stealth": "+6"
+	},
+	"trait": [
+		{
+			"name": "Keen Smell",
+			"entries": [
+				"The barking beast has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+			]
+		},
+		{
+			"name": "Pounce",
+			"entries": [
+				"If the barking beast moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the barking beast can make one bite attack against it as a bonus action."
+			]
+		},
+		{
+			"name": "Running Leap",
+			"entries": [
+				"With a 10-foot running start, the barking beast can long jump up to 25 feet."
+			]
+		}
+	],
+	"traitTags": [
+		"Keen Senses",
+		"Pounce"
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"actionTags": [
+		"Swallow"
+	],
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit +5} to hit, reach 10 ft., one creature. {@h}5 ({@damage 4d4 + 3}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw, taking 14 ({@damage 3d8}) poison damage on a failed save, or half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"fluff": {
+		"entries": [
+			"The barking beast is a voracious monster, with the body of a leopard and the head and neck of a poisonous snake. Despite it's snake-like head, the barking beast is so-named for the sound it makes, described as the yelping of a small dog or fox.",
+			"{@b Perilous Quest.} Barking beasts are occasionally called questing beasts by the earth kin. These creatures are often disruptive to earth kin communities near their forest dwellings, and so those who see to the protection of the common people have made an event out of hunting down barking beasts and slaying them.",
+			"{@b Solitary Hunters.} Barking beasts are loners, rarely coming together except during mating season. Their territories cover vast expanses of the Jungle of Lost Tribes, and they defend this territory ferociously, causing them to attack any who pass through it as though it were a rival barking beast.",
+			"{@b Deadly Poison.} The barking beast's most fatal trait is the burning venom that it empties into its prey. The venom of the barking beast is often procured after one is slain, and is synthesized into a deadly poison for administering to one's enemies, or for coating one's weapon."
+		]
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328055085355237376/barking_beast.png?ex=67854f2e&is=6783fdae&hm=e8cf6e1c9b3bab3287f0ea4c3cf0dfe951e3974810697f445b73eb999bae8ee9&"
+	},
+	"damageTags": [
+		"I",
+		"P",
+		"S"
+	],
+	"savingThrowForced": [
+		"constitution",
+		"strength"
+	]
+}
