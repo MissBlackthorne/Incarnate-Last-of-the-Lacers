@@ -1,32 +1,156 @@
-___
->## Adlet
->*Medium Humanoid, neutral*
->___
->- **Armor Class** 15 (Hide Armor, Shield)
->- **Hit Points** 39 (6d8 + 12)
->- **Speed** 35 ft.
->___
->|STR|DEX|CON|INT|WIS|CHA|
->|:---:|:---:|:---:|:---:|:---:|:---:|
->|13 (+1)|12 (+1)|14 (+2)|8 (-1)|12 (+1)|9 (-1)|
->___
->- **Skills** Animal Handling +3, Survival +3
->- **Senses** passive Perception 11
->- **Languages** Primordial (Aquan)
->- **Challenge** 1/4 (XP 50; PB +2)
->- **Proficiency Bonus** +2
->___
->***Fey Ancestry.*** The adlet has advantage on saving throws against being charmed, and magic can't put the adlet to sleep.  
->
->***Keen Senses.*** The adlet has advantage on Wisdom (Perception) checks that rely on sight, hearing or smell.  
->
->***Standing Leap.*** The adlet's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.  
->
->***Tundra Camouflage.*** The adlet has advantage on Dexterity (Stealth) checks made to hide in icy terrain.  
->
->### Actions
->***Multiattack.*** The adlet makes two attacks: one with its bite and one with its spear.  
->
->***Bite.*** *Melee Weapon Attack:*  +3 to hit, reach 5 ft., one target. *Hit:* 3 (1d4 + 1) piercing damage.  
->
->***Spear.*** *Melee  or Ranged Weapon Attack:*  +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (1d6 + 1) piercing damage in melee, or 5 (1d8 + 1) piercing damage if used with both hands.
+{
+	"name": "Adlet",
+	"size": [
+		"M"
+	],
+	"type": "humanoid",
+	"source": "Incarnate-TheLastoftheLacers",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"Hide Armor, Shield"
+			]
+		}
+	],
+	"hp": {
+		"formula": "6d8 + 12",
+		"average": 39
+	},
+	"speed": {
+		"walk": 35
+	},
+	"str": 13,
+	"dex": 12,
+	"con": 14,
+	"int": 8,
+	"wis": 12,
+	"cha": 9,
+	"passive": 11,
+	"cr": "1/4",
+	"page": 107,
+	"languages": [
+		"Primordial (Aquan)"
+	],
+	"languageTags": [
+		"AQ",
+		"P"
+	],
+	"skill": {
+		"animal handling": "+3",
+		"survival": "+3"
+	},
+	"trait": [
+		{
+			"name": "Fey Ancestry",
+			"entries": [
+				"The adlet has advantage on saving throws against being {@condition charmed}, and magic can't put the adlet to sleep."
+			]
+		},
+		{
+			"name": "Keen Senses",
+			"entries": [
+				"The adlet has advantage on Wisdom ({@skill Perception}) checks that rely on sight, hearing or smell."
+			]
+		},
+		{
+			"name": "Standing Leap",
+			"entries": [
+				"The adlet's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+			]
+		},
+		{
+			"name": "Tundra Camouflage",
+			"entries": [
+				"The adlet has advantage on Dexterity (Stealth) checks made to hide in icy terrain."
+			]
+		}
+	],
+	"traitTags": [
+		"Camouflage",
+		"Fey Ancestry",
+		"Keen Senses"
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The adlet makes two attacks: one with its bite and one with its spear."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+			]
+		},
+		{
+			"name": "Spear",
+			"entries": [
+				"{@atk mw,rw} {@hit 3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage in melee, or 5 ({@damage 1d8 + 1}) piercing damage if used with both hands."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"miscTags": [
+		"MW",
+		"RW",
+		"MLW",
+		"THW"
+	],
+	"attachedItems": [
+		"spear|phb"
+	],
+	"fluff": {
+		"entries": [
+			"The adlet are a race of creatures with the legs of a dog and the upper torso of a person with canine features.",
+			"{@b Adapted to Cold.} Adlet are encountered on the Great Glacier, where their territory overlaps with that of the water clan. Adlet are not known for their great intelligence, but as they are fearsome hunters and powerful warriors, adlet and the water clan typically avoid one another if at all possible.",
+			"{@b Steeped in Folklore.} While the stories of adlet tell of them being the offspring of humans and dogs, their true origin lies in the Spirit World. Adlet elders tell the story of their origin in the Spirit World, coming from a land of cold and ice, which is why they chose to settle at the north and south pole when they crossed over to the Material Plane.",
+			"{@b Simple Traditions.} While the water clan sees adlet as being untrustworthy, the truth is that it's a mutual distrust. The adlet are a simple people, with hunters, warriors, fishermen and others represented in their society. They fear the water clan as much as they are feared, and have their own stories about the evilness of the water clan.",
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"",
+							{
+								"type": "entries",
+								"name": "",
+								"entries": [
+									"",
+									{
+										"name": "",
+										"entries": [
+											""
+										],
+										"type": "entries"
+									}
+								]
+							},
+							{
+								"type": "inset",
+								"name": "The Girl and the Dogs",
+								"entries": [
+									"A woman, Qaaynak (the girl), lived with her father, Oki, but would not choose a man to marry, and was hence called Uinigumissuitung (she who wouldn't take a husband). After rejecting all of her suitors, she chose to marry a dog, Ijirqang, who had white and red spots. This greatly angered Oki, but he remained silent. Of their ten children, five were dogs and the others were adlet, with the bodies of men and the legs of dogs. Since Ijirqang would not go hunting and the children were becoming very hungry, it fell to Oki to provide for the full household. With the house too full of hungry children, Oki put them into a boat and carried them to a small island, telling Ijirqang to swim to them to get food for he and Qaaynak. Qaaynak hung a pair of boots around Ijirqang's neck and he swam ashore, but instead of food, Oki put rocks in the shoes. When Ijirqang attempted to swim home, he drowned. In anger, Qaaynak went to her father, and ordered her children to bite him. Oki pushed her into the water and attempted to drown her as he did her husband. Qaaynak survived, but afraid that Oki might turn his wrath to her children, sent the adlet away. All adlet today are the descendents of Qaaynak and Ijirqang. One must always be wary, for the adlet have extreme distrust and anger against humans, who they see as the descendants of Oki, who attempted to kill them all."
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"tokenHref": {
+		"type": "external",
+		"url": "https://cdn.discordapp.com/attachments/1328055042359689299/1328057361486712863/adlet.png?ex=6785514d&is=6783ffcd&hm=b86cc2ab0e213bdef08f74f548e9f8b52f36b893bec7de9f55f0aac02385f42d&"
+	},
+	"damageTags": [
+		"P"
+	]
+}
